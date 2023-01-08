@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://dev-owner.github.io/sitemap-index.xml
+Host: https://dev-owner.github.io
