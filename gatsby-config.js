@@ -12,7 +12,7 @@ module.exports = {
     title: `Dev-0wner's Engineering Blog`,
     description: `Data, Cloud에 집중하는 엔지니어`,
     author: `dev-0wner`,
-    siteUrl: `https://dev-owner.github.io`,
+    siteUrl: `https://dev-owner.github.io/`,
   },
   plugins: [
     {
