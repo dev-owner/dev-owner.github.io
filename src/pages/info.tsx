@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { FunctionComponent } from 'react'
 import { graphql, Link } from 'gatsby'
 import { css, Global } from '@emotion/react'
