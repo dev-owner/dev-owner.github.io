@@ -16,7 +16,7 @@ var SubTitle = styled_1.default.div(templateObject_3 || (templateObject_3 = __ma
 var Title = styled_1.default.div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  margin-top: 5px;\n  font-size: 35px;\n  font-weight: 700;\n\n  @media (max-width: 768px) {\n    font-size: 25px;\n  }\n"], ["\n  margin-top: 5px;\n  font-size: 35px;\n  font-weight: 700;\n\n  @media (max-width: 768px) {\n    font-size: 25px;\n  }\n"])));
 var Introduction = function (_a) {
     var profileImage = _a.profileImage;
-    return ((0, jsx_runtime_1.jsx)(Background, { children: (0, jsx_runtime_1.jsxs)(Wrapper, { children: [(0, jsx_runtime_1.jsx)(ProfileImage_1.default, { profileImage: profileImage }), (0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)(SubTitle, { children: "Nice to meet you." }), (0, jsx_runtime_1.jsx)(Title, { children: "I'm senior Data Engineer dev-0wner." })] })] }) }));
+    return ((0, jsx_runtime_1.jsx)(Background, { children: (0, jsx_runtime_1.jsxs)(Wrapper, { children: [(0, jsx_runtime_1.jsx)(ProfileImage_1.default, { profileImage: profileImage }), (0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)(SubTitle, { children: "Data Engineer / Solutions Architect" }), (0, jsx_runtime_1.jsx)(Title, { children: "dev0wner's Blog" })] })] }) }));
 };
 exports.default = Introduction;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
