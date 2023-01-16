@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.3.3"/><style data-href="/styles.9e907bc32054b7771552.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link rel="sitemap" type="application/xml" href="/sitemap-index.xml"/><link rel="canonical" href="https://dev-owner.github.io/2022-11-10-programmers-data-engineering-meetup/" data-baseprotocol="https:" data-basehost="dev-owner.github.io"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css flq1iw">.css-flq1iw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}</style><main class="css-flq1iw"><style data-emotion="css-global 1vr0iip">@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');*{padding:0;margin:0;box-sizing:border-box;font-family:'Nanum Myeongjo',serif;}html,body,#___gatsby{height:100%;}a,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}</style><style data-emotion="css a6j9j1">.css-a6j9j1{position:relative;width:100%;height:400px;}@media (max-width: 768px){.css-a6j9j1{height:300px;}}</style><div class="css-a6j9j1"><style data-emotion="css 14ujruu">.css-14ujruu{z-index:-1;width:100%;height:400px;object-fit:cover;-webkit-filter:brightness(0.25);filter:brightness(0.25);}@media (max-width: 768px){.css-14ujruu{height:300px;}}</style><div data-gatsby-image-wrapper="" style="position:absolute" class="gatsby-image-wrapper gatsby-image-wrapper-constrained css-14ujruu"><div style="max-width:768px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;402&#x27; width=&#x27;768&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div><img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABL0lEQVR42q1SW26DMBDk/ndpwiMlVauWgG0gggR7nfC6zFReQ5uoSr/yMdplxzM7wg5ESHgmgqcbFluDh9j8wz3gAxkRZGzBNSIo18cWKrEod746rLNbOF7GXsceiUXQZj1MPeEsBhzfL6DjhCa7wtQjdDXi0s44FT1O+YCuHED1jOZg0Xz1oOOMJrvgXAzo5Ij2cEUgE4JMDEPEBioliMig2ruNBLkz/C0iYt7VItRQCaFMLXMupT9j1n9IyF8MqvQKXY5oPntoNXHiTkygaoaWE7Sa0R56nLKBz9Uflk3zjYHYEvv83LIzdtvLveUEedihCDuonU9SvXlxuSefPHFJfSpnJFwfGm/IZkstbra5WZkSm6hXw7i/2Xvt3TtcB9wv236FeoFZuPXdmT/ab3i2khCIsFF6AAAAAElFTkSuQmCC" alt=""/><picture><source type="image/webp" data-srcset="/static/0f310607e7c849aa40f1f73e25c396e6/a3a09/2022-11-10-programmers-thumbnail.webp 192w,/static/0f310607e7c849aa40f1f73e25c396e6/5358b/2022-11-10-programmers-thumbnail.webp 384w,/static/0f310607e7c849aa40f1f73e25c396e6/81e8e/2022-11-10-programmers-thumbnail.webp 768w" sizes="(min-width: 768px) 768px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 768px) 768px, 100vw" decoding="async" loading="lazy" data-src="/static/0f310607e7c849aa40f1f73e25c396e6/9b7d7/2022-11-10-programmers-thumbnail.png" data-srcset="/static/0f310607e7c849aa40f1f73e25c396e6/5d231/2022-11-10-programmers-thumbnail.png 192w,/static/0f310607e7c849aa40f1f73e25c396e6/e1116/2022-11-10-programmers-thumbnail.png 384w,/static/0f310607e7c849aa40f1f73e25c396e6/9b7d7/2022-11-10-programmers-thumbnail.png 768w" alt="thumbnail"/></picture><noscript><picture><source type="image/webp" srcSet="/static/0f310607e7c849aa40f1f73e25c396e6/a3a09/2022-11-10-programmers-thumbnail.webp 192w,/static/0f310607e7c849aa40f1f73e25c396e6/5358b/2022-11-10-programmers-thumbnail.webp 384w,/static/0f310607e7c849aa40f1f73e25c396e6/81e8e/2022-11-10-programmers-thumbnail.webp 768w" sizes="(min-width: 768px) 768px, 100vw"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 768px) 768px, 100vw" decoding="async" loading="lazy" src="/static/0f310607e7c849aa40f1f73e25c396e6/9b7d7/2022-11-10-programmers-thumbnail.png" srcSet="/static/0f310607e7c849aa40f1f73e25c396e6/5d231/2022-11-10-programmers-thumbnail.png 192w,/static/0f310607e7c849aa40f1f73e25c396e6/e1116/2022-11-10-programmers-thumbnail.png 384w,/static/0f310607e7c849aa40f1f73e25c396e6/9b7d7/2022-11-10-programmers-thumbnail.png 768w" alt="thumbnail"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><style data-emotion="css hgv96i">.css-hgv96i{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;height:100%;margin:0 auto;padding:60px 0;color:#ffffff;}@media (max-width: 768px){.css-hgv96i{width:100%;padding:40px 20px;}}</style><div class="css-hgv96i"><style data-emotion="css 1jbtedb">.css-1jbtedb{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#ffffff;color:#000000;font-size:22px;cursor:pointer;box-shadow:0 0 10px rgba(0, 0, 0, 0.3);}@media (max-width: 768px){.css-1jbtedb{width:30px;height:30px;font-size:18px;}}</style><div class="css-1jbtedb"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg></div><style data-emotion="css 19jc57v">.css-19jc57v{display:-webkit-box;overflow:hidden;overflow-wrap:break-word;margin-top:auto;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:45px;font-weight:800;}@media (max-width: 768px){.css-19jc57v{font-size:30px;}}</style><div class="css-19jc57v">실리콘밸리 에서 날아온 데이터 엔지니어링 컨퍼런스</div><style data-emotion="css y1wqh9">.css-y1wqh9{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px;font-size:18px;font-weight:700;}@media (max-width: 768px){.css-y1wqh9{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;font-size:15px;font-weight:400;}}</style><div class="css-y1wqh9"><div>실리콘밸리 / 데이터 엔지니어링 / 컨퍼런스 / 프로그래머스 / data engineering / programmers</div><div>2022.11.10.</div></div></div></div><style data-emotion="css 1h2osxm">.css-1h2osxm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;margin:0 auto;padding:100px 0;word-break:break-all;line-height:1.8;font-size:16px;font-weight:400;}.css-1h2osxm p{padding:3px 0;}.css-1h2osxm h1,.css-1h2osxm h2,.css-1h2osxm h3{font-weight:800;margin-bottom:30px;}.css-1h2osxm *+h1,.css-1h2osxm *+h2,.css-1h2osxm *+h3{margin-top:80px;}.css-1h2osxm hr+h1,.css-1h2osxm hr+h2,.css-1h2osxm hr+h3{margin-top:0;}.css-1h2osxm h1{font-size:30px;}.css-1h2osxm h2{font-size:25px;}.css-1h2osxm h3{font-size:20px;}.css-1h2osxm blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-weight:800;}.css-1h2osxm ol,.css-1h2osxm ul{margin-left:20px;padding:30px 0;}.css-1h2osxm hr{border:1px solid #000000;margin:100px 0;}.css-1h2osxm a{color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}.css-1h2osxm pre[class*='language-']{margin:30px 0;padding:15px;font-size:15px;}.css-1h2osxm pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255, 255, 255, 0.5);border-radius:3px;}.css-1h2osxm code[class*='language-'],.css-1h2osxm pre[class*='language-']{tab-size:2;}@media (max-width: 768px){.css-1h2osxm{width:100%;padding:80px 20px;line-height:1.6;font-size:14px;}.css-1h2osxm h1{font-size:23px;}.css-1h2osxm h2{font-size:20px;}.css-1h2osxm h3{font-size:17px;}.css-1h2osxm img{width:100%;}.css-1h2osxm hr{margin:50px 0;}}</style><div class="css-1h2osxm"><h1>실리콘밸리에서 날아온 데이터 엔지니어링 컨퍼런스</h1>
+<h3>배경</h3>
+<p>제가 처음 <a href="https://school.programmers.co.kr/learn/courses/14982" target="_blank" rel="nofollow">실리콘밸리에서 날아온 데이터 엔지니어링 코스</a>를 알게 된 건 아래 Youtube EO Channel에
+올라온 한기용님 영상을 시청한 이후 입니다. 총 3부까지 있는 이 영상을 보고 나서 여러가지로 많은 생각을 하게 되었습니다. 혹시 아직 안보셨다면 한번쯤 가볍게 시청해보시는 것도 추천 드립니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/16fa0d15ce14a4c7705205c813484caf/c96b6/2022-11-10-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAACjUlEQVR42l2SSWtTURiG728wN7E1Q6Nmsql0SnKT9CZp75Q7ZbBNax3RpKVWBBUERUV0Y9GKXSjdWVAQFARBBUEQ3Kg7f4Abl+79A4/c20m7eHhfDodz+B4+YeXhE9bWn7Hx4jWP1p5iaiqLy5eozs5xRFUYsUwymkJKmfLJGjoHShJibpxgfovcOKFigUAyifD+43e+/fjJr99/+Pr5C3eOu5zsdKj1znKoaXO43STiWERdeyfDtskB2/TT76ZBn2sjjo4grD5eZ+PlKz58+syHN29ZOz/P3auXqSwsEnMt4k2XgYZD3LUZcCxijuWnh3fmEbXq9Nkm4sgwwsXj81y5sMRSt0tr5gRKfpTCeI4Bw2CfpiBuEaxVCdUqBLfY2/erCoGhLIJeHGe5e4qVeze4tHSaqpSjJA0zamoctS2GTIOUppLSNTKGzqBZJ+F9IuUJFgubSAVCEyUC6RTClW6bXqfO/VsXWbnW4/md60zlx8i6CpmZNolWg6jnzhvXtX28Ht7r0LE2HXZPz9GZaeDYKk1lgtWlHh21QtoxiR9rEWs4m/jebD/97jndIrLtcHQYoTNZpV0p05JLhMP9JCL9HIyGEUuS7zCgTPqIVRmxMkHQT9nPbUJVmf3evewgwkRFpeJMMzQmcTg9SH2qRjyZIFGtMtJwGTQNMnWdTN0gqWukDZ2sbdEvlxE9fyWJYFEiJJcJZNIIamOW2/duMpyTmCyXeffgLnW5TFyRGZqbJtFq7owY+4eIbW7iWP87tGyXhd4ZFF1H1QweLJ6jIZeIqAoHp9tEPX9Nd8edR9Q2d/fRW3TvwW2H7VKZlqozZ5oc0zTGMili4TCBooSoK4ieP2XyP2d7CVV2Hf4FFu2pFSCswVIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/16fa0d15ce14a4c7705205c813484caf/a59e9/2022-11-10-1.webp 192w,
+/static/16fa0d15ce14a4c7705205c813484caf/0ca9f/2022-11-10-1.webp 384w,
+/static/16fa0d15ce14a4c7705205c813484caf/dc9b9/2022-11-10-1.webp 768w,
+/static/16fa0d15ce14a4c7705205c813484caf/e2c2f/2022-11-10-1.webp 1152w,
+/static/16fa0d15ce14a4c7705205c813484caf/f3efb/2022-11-10-1.webp 1536w,
+/static/16fa0d15ce14a4c7705205c813484caf/8056f/2022-11-10-1.webp 2250w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/16fa0d15ce14a4c7705205c813484caf/3b721/2022-11-10-1.png 192w,
+/static/16fa0d15ce14a4c7705205c813484caf/66595/2022-11-10-1.png 384w,
+/static/16fa0d15ce14a4c7705205c813484caf/fe486/2022-11-10-1.png 768w,
+/static/16fa0d15ce14a4c7705205c813484caf/d2d74/2022-11-10-1.png 1152w,
+/static/16fa0d15ce14a4c7705205c813484caf/e8464/2022-11-10-1.png 1536w,
+/static/16fa0d15ce14a4c7705205c813484caf/c96b6/2022-11-10-1.png 2250w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/16fa0d15ce14a4c7705205c813484caf/fe486/2022-11-10-1.png"
+            alt="2022 11 10 1"
+            title="2022 11 10 1"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<p>기존에 4년정도 데이터 엔지니어링 업무를 대기업에서 했었는데, 다른 곳에서는 어떻게 하고 있는지 궁금하기도 하고 내가 기존에 몰랐던 것들을 혹시 배울 수 있지 않을까 하여 코스를 신청하게 되었습니다. 듣고 보니 역시
+기대를 저버리지 않고 강의가 나름 알차게 코스가 구성되어 있어 많은 걸 배울 수 있었던 것 같습니다. 역시 세상은 넓고 배울것은 많습니다 :)</p>
+<p>이 코스는 2022년 10월 기준 벌써 10기를 운영할 만큼 관련 종사자분들이 많이 듣고 계시기도 한데 이번에 코스 수강생들 대상으로 기용님이 데이터
+엔지니어링 <a href="https://school.programmers.co.kr/learn/courses/15230" target="_blank" rel="nofollow">컨퍼런스를</a> 열어주셔서 다녀온 후기를 작성해보려 합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 95.3125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAAFKUlEQVR42h3S20/bhxnG8d9FpV1NyqYx9ZBGnbZKW0hEUli7NIWQ0wIdo8HQECCcbDAYjAPYGGOOBgw22MbGxviAjWtOBmPA4HA+JJBDS9IspOlGMmnVNO0i0v6H7wQXj967j55HeoXw6kuiW69YfnDI1uM3rO/9QCS2R3AyQnB8gqnQNNHYPdY2t/nnv/7DTHgOefVd+oxm1jbu8/zgFRsb25hMFsQSCYLOvUPb8BYtzk3aj65jjUbbMpl5VVxMisfSZ8bjGkXfoqWjpY0b6TdpamrlbweHzISjtLbrkFRUUq1UYXK5EYyBPQyBR8fp8e/RPbKDcew77khVyMpyGdB3oZVLKcvNojT3a1Iv/5m62nrUTVpKKypR67oY8AcILCwxEVtB0Pt36fY+oGN4k07PA3oDTzBNPqe22UC/QcuN5IukfvYZpQXF9BtspH2Zxe2SErodQzgmpvDPLzEWWyG0vsV4bBXB+M0TKjUOrqZlkyEScz0jj/qeSbosXuwmLemXUijMucWYw07EewRm0qDX447M4ZldYHTxHmOxVUJrW/giC0cNH1GuGqAwvxSJWMaVS5eRNTnQmd3USLLRFP4Vq7KA59N6Hof6+Er0NdKmZgx+P+7ZOTyRRXxHc5fXGZ4MIei8D5CozKReuUTalyKSPj1DhcaGrt9J+rU/oc5PI9RZwrqrAXdLOV9l3aaipZWeET/OmRlc4Tm8kSjB2AqDgSBCs2OTimYDsrpiXJ4odo+amg4zDR0mRH/5gqqbqWjzryJK+QRVSQ4ZojvUdnVj9AUYCoVwzUTwhheOQYvXj9BoXUbc0I/JZmf34St2dp7R0DNKlbKZa8mJlGelIc64TvypU5w/k0BesYwOu53BiRD2qSlc4Qie8Pwx2DfsQlCZo0g1TiZnZtg/eMx8NEp91wiVCi2yojxUlRUYVDV8EPcu75/8HYWl1VSp1XTaHFhGgwxPz+KbX2JqYxvjkPMInKescZBweJXH+y9weZ3U6mwoWwYYMhqpKpNy6oOTCIJAwtlEiiQK5E0a7jZpkStV1Gtbae7uxeT20dzVg6DonUGitjLosNJn8lCnaEHeYj1+7KSE07z37nucOBHH+3FxpKZc4U5JNfXtHegcLnrdPsy+AHqbna4+E1XVcgTDyDrFSiufX7hAZmY2nyYmkSttprCsloQ/fEzcr37NL078kgJROvJyCbeLpMiUtUhralB3dDM0NUtodZvXP/0Po3kAQeeMUaYeJCX5Mlev3eBs/BkKqtpJvi7i5z9757jhRx+eRF4ioqG2hvxSGe12K40GPTKlguq6u8RW9vjx8L8oNU0Id3umkLc6OZdwjvjT8fz2Nx+RI1ZTW69GUXoTjUKMRiFh2KjBYzOSWyimzdZPx6AZtbETi3eYf/z934xNhElOuYhQrQsibbRz/twn/DExkbOnf09ajgyLxcy0t4d70y52lsZ4uj3LpH+YtMwcOof66Haa0PbriG3s8vrNW3xTQW7lZSEoG9uQK1R8ceFzLqekknTuPFlZ2YyPOtlYDLKzHGJ3Lcx3OwsszwepU1RQJi+nzarH6Bpg/9kbXhz8hMU7SH5RLkI05GV8ZJCsjHRkZUX0dmpYXxrnh6dbPHu4wpOdRXbXI2wuTbIWHSM256O7rZ7cwlv4p0IcHr7l4bcHmN0mcguyEZYXJnh0f5G9rQgvn67xcn+V75+s8OLbjePs7y0fg+uLEyzPfcNSxM/qUgCLoYX79/c5fP2WmYUo1hEzxeJ8/g8iLsOTQrKKDAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/f321bca899e68be44b9eab1b42b73ac6/a59e9/2022-11-10-2.webp 192w,
+/static/f321bca899e68be44b9eab1b42b73ac6/0ca9f/2022-11-10-2.webp 384w,
+/static/f321bca899e68be44b9eab1b42b73ac6/dc9b9/2022-11-10-2.webp 768w,
+/static/f321bca899e68be44b9eab1b42b73ac6/e2c2f/2022-11-10-2.webp 1152w,
+/static/f321bca899e68be44b9eab1b42b73ac6/0528b/2022-11-10-2.webp 1310w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/f321bca899e68be44b9eab1b42b73ac6/3b721/2022-11-10-2.png 192w,
+/static/f321bca899e68be44b9eab1b42b73ac6/66595/2022-11-10-2.png 384w,
+/static/f321bca899e68be44b9eab1b42b73ac6/fe486/2022-11-10-2.png 768w,
+/static/f321bca899e68be44b9eab1b42b73ac6/d2d74/2022-11-10-2.png 1152w,
+/static/f321bca899e68be44b9eab1b42b73ac6/b4bc2/2022-11-10-2.png 1310w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/f321bca899e68be44b9eab1b42b73ac6/fe486/2022-11-10-2.png"
+            alt="2022 11 10 2"
+            title="2022 11 10 2"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+    </span>
+(출처 : <a href="https://www.linkedin.com/in/hannahhejang/" target="_blank" rel="nofollow">https://www.linkedin.com/in/hannahhejang/</a>)</p>
+<h3>목차</h3>
+<p>금일 컨퍼런스 목차입니다.</p>
+<ol>
+<li>Airflow 환경 고도화하기 (<a href="https://www.linkedin.com/in/ACoAAB0dV2QBZEoHPDMHVUaWR3F-okOKbAsuqhQ" target="_blank" rel="nofollow">hoyeon lee</a>)</li>
+<li>공공데이터 적재하기 (<a href="https://www.linkedin.com/in/ACoAADdQHFoBvXqcwhKQG5YBRI0MNzRqGv_9j7w" target="_blank" rel="nofollow">Eunji Yi</a>)</li>
+<li>스타트업에서 데이터기반 의사결정 구조 만들기 (<a href="https://www.linkedin.com/in/ACoAAAJgCuMBC6ob4tTNYE290unr86fVRLD7blM" target="_blank" rel="nofollow">Minjong Kim</a>)</li>
+<li>참석자 네트워킹</li>
+</ol>
+<p>비록 시간대가 퇴근 후 저녁시간대였지만 1번부터 3번까지 흥미로운 주제로 가득했고 이는 컨퍼런스에 참가할 충분한 동기부여가 되었습니다. 참석자간 네트워킹 시간 같은 경우, 제가 한번도 경험이 없기 때문에 사실 한국
+특성상 서먹서먹하고 어색한 분위기가 흐르다가 끝나지 않을까 막연한 예상을 하고 일단 들어갔습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 91.14583333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAAE+0lEQVR42iXOWUzTBwCA8f/DFt10YCaZVgFBjmIpCBSUUy6lUIoCrVUQsRwWBDokiIggCJRyn60FShnimDBGFFCsQ4aDGKdT2TyYOjPNFp/NfFi2t2/J9vDl9/oJ1RWlNFSfprm+mjZDHZ0tBrrbm+ntasVs6qS3rwPbFzYGh4YYGLIxMDSM1TaC1TaM2WLGah3EZrNisZgx9XUjVJfrqa86heHcGYx1ZzHWVmOs+79SfS5ZWhXG1jZ6TRbaOnpobeuivbOHc3X1aDJTKSnO50x5KeX6E5ws0iE01VTS3lhLl/E8Pa1NWEw9XDB1/2dFRQnZuUeYmrvD3cdvuX3/FQt3X3Dn4WvGp+ZJO5RKWZkeQ30tNWcrqaooQ+htNtDf1U5/bye2QQtXr80xNXONqZk5zjfVklegxb70lCdv/uHBi/c8fP4nq6//Zu7bRxw+qqaxpYnhsctYhmwYGusRBns6uTjYz6htgMuXRrEvLGK/tcjczUWaOwzoSrTYF1b45be/WFl9x8/P37H663tmrt8lM0dDg9FAv2WA0fFv6OszIYwOmLhk7WfEauHi8BDXb85zZWaO2Ru36BuwUFVbw5XZJb5besri8lOu2e9xe/kZ45M3qaipprXDim1wCtuXE1RWnUUoyMkhOiKCtqZG5manMVuGyNMVMXNjHvviMvWGFnLzCgmPUVJV18KeuFQGRy4jT1aRoyth4so0I19N0XPBSnT0XoStrp7slEg4W1FJc3M70bGJbPPY8d/lyNjXGAxtaA5mss5hE77+Ybh5+HOutgmpn4wAWTCTV8axWUcJD48lKTkdISbQF093T7ZuE7MnTsF2sT8fOXxGkb6c1vY+VJpsvMVSPlyzHtFWT5xEHsTuTSEsMo4gWSiHj+aSmZGNwzoHJN5ihJKsXDZsdEYQPiBpv4a2TjMbnJxZs86JdE02ukI9m0Qu+Pr4kKnch0qRyBYXL7Ztl7D+UxGqRDnpikTS0lTk5uQhxMmLiYrJIUAWS0lxITXGHlIz8kk/dIzkA4c4VXWepiYjfTVlmGv0DDSUo4iPReTsSULKQU7pCjmiUpOmOohWm4sgDUjGW5JAZGwW3e1mRqbsXJ3/AV3RKeQKDZXnWrjQZqRYk0RcoA+ZCVFoU+VsEm0hYk8M5ZVnUKnTCQ4JIVAmQ4iIz8E36AAityh2x2rR5eejSFLitWM3Xj4heHgFkBIVinK3FJn7ZvYGiincH4NELMZxoxMKhZyC4pOIJX6s/XgtQmhcDlJZOp84BeAqUSKWRuDpLcHDNwxPHxnunn4ESPzQq+SkRgYhdRORFh9FRFQ8QSGRRMUlI0/NJiA4HBe37QihMRkcL6hBnVHMcX0jJ042YGg1czj7BOsdNuPq7kt4wE5Uob4kB3nxuUbOwPAYO/x3s83dB7lSTULKIeITlXhLAhFCIhR0GJtZ+fE+qy/f8mT1Db+/fUdnjxVnNyl+/rtQhvrhJ3Ik2MWRBm06S/abHNMeJzRsFxlZh8nT5ePt44XjBgcEV+9AEoLDmL84wcrzP3jw6CV3H75g8toSWUd1XBo0cSItllC3jQQ5b6DuuJpHC1d59uB7Ht9bwNTdjFqtRCGPJCsjGWGzqxdSSQjTl2d49PQ1D396xfSNZezLK0xPjPFsaZYydTT+Igd2bnXkfNERFiZHWJod5/78NN2Np1HsC6K05Bi6XDX/Ava+NWc2Mh8GAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/358ededcf7539a238fdca420d8b57d2c/a59e9/2022-11-10-3.webp 192w,
+/static/358ededcf7539a238fdca420d8b57d2c/0ca9f/2022-11-10-3.webp 384w,
+/static/358ededcf7539a238fdca420d8b57d2c/dc9b9/2022-11-10-3.webp 768w,
+/static/358ededcf7539a238fdca420d8b57d2c/e2c2f/2022-11-10-3.webp 1152w,
+/static/358ededcf7539a238fdca420d8b57d2c/0da4f/2022-11-10-3.webp 1202w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/358ededcf7539a238fdca420d8b57d2c/3b721/2022-11-10-3.png 192w,
+/static/358ededcf7539a238fdca420d8b57d2c/66595/2022-11-10-3.png 384w,
+/static/358ededcf7539a238fdca420d8b57d2c/fe486/2022-11-10-3.png 768w,
+/static/358ededcf7539a238fdca420d8b57d2c/d2d74/2022-11-10-3.png 1152w,
+/static/358ededcf7539a238fdca420d8b57d2c/98b00/2022-11-10-3.png 1202w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/358ededcf7539a238fdca420d8b57d2c/fe486/2022-11-10-3.png"
+            alt="2022 11 10 3"
+            title="2022 11 10 3"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+    </span>
+(출처 : <a href="https://www.linkedin.com/in/hannahhejang/" target="_blank" rel="nofollow">https://www.linkedin.com/in/hannahhejang/</a>)</p>
+<h3>Airflow 환경 고도화하기</h3>
+<p>금일 컨퍼런스 첫번째 세션입니다. 쏘카의 <a href="https://www.linkedin.com/in/ACoAAB0dV2QBZEoHPDMHVUaWR3F-okOKbAsuqhQ" target="_blank" rel="nofollow">Grab</a>님이 발표를 진행해 주셨습니다.</p>
+<p>GKE에서 K8S에 Airflow를 운영중이셨고, 통합 저장소로 BigQuery를 사용중이셨습니다. Airflow는 외부 저장소에서 BigQuery로 데이터를 적재할때 Batch 작업을 하기 위해 주로 사용했네요.</p>
+<p>Airflow 개발환경에 대한 이야기를 많이 말씀 해주셨습니다. 초기 아키텍처는 Git과 연계하여 DAG 버전관리와 동시에 Airflow에 배포되는 구조를 가져간 것 같구요. 운영환경 및 다른 동료들과 독립적인
+환경을 구축하기 위해 Git Branch를 따로 가져가고 push되면 buddyworks, argocd를 통해 전용 airflow가 생성되어 테스트 및 검증 후 운영 merge되는 구조였다고 합니다.</p>
+<p>이런 구조에서 발생했던 자원 낭비, 불편한 환경, 긴 피드백 루프등의 많은 이슈로 인해 개발 환경 파이프라인을 docker compose 기반 로컬 노트북 환경으로 개선을 했다고 합니다. GCP Service
+Account를 통합 인증 수단으로 활용하였고, DAG Parsing Optimization을 위해 .airflowignore를 적극적으로 활용하셨다고 해요.</p>
+<p>이러한 개선 구조를 통해 클러스터를 띄우는 시간을 많이 단축시키고 피드백 루프를 단축시켜 생산성을 많이 향상시킬 수 있었다고 합니다.</p>
+<p>이어서 테스트 환경에 대한 이야기가 나왔는데, DAG 기본 문법 등을 체크하기 위해 pytest를 활용하셨고, pre commit hook을 사용하셨다고 합니다. Github Action에서 컨벤션, 테스트, 검증
+등을 추가로 진행했다고 하네요.</p>
+<p>꿀팁들도 여러가지 소개해 주셨는데, 그 중에 CleanUp DAG를 만들어서 주기적으로 TI나 DagRun등의 정보를 삭제하여 전반적인 cluster 반응성 등을 향상시킨 점이 인상깊었습니다.</p>
+<p>모니터링, DAG 운영 알람, 보안 및 RBAC 적용, 외부 접속 정보에 대한 secret 저장소 활용, gcp secret manager 적용 등 많은 내용을 얘기해 주셨지만 시간이 많지는 않은 관계로 깊이는
+다루지 못했던것 같습니다.</p>
+<p>이후 위 내용들을 포함한 전반적인 내용을 <a href="https://tech.socarcorp.kr/data/2022/11/09/advanced-airflow-for-databiz.html" target="_blank" rel="nofollow">SOCAR Tech Blog</a>에서
+소개해 주셔서 관심있으시면 한번 보시는걸 추천 드립니다.</p>
+<h3>공공데이터 적재하기</h3>
+<p>공공데이터 적재관련해서는 뱅크샐러드의 <a href="https://www.linkedin.com/in/ACoAADdQHFoBvXqcwhKQG5YBRI0MNzRqGv_9j7w" target="_blank" rel="nofollow">Eunji Yi</a>님이 발표해주셨는데요, 처음 소개에서
+NASA에서 일한 경력이 있으신게 아주 인상깊었습니다.</p>
+<p>이후에 뱅크샐러드에서 공공데이터 수집 관련해서 고군분투기를 말씀해 주셨는데, 본격적으로 공공데이터를 사용하기 위해 고려해야 할 것들이 얼마나 많은지 알 수 있었습니다.</p>
+<p>저는 이전에 한번 업무에서 공공데이터 수집을 해봤는데도 불구하고, 제대로 여러기관의 데이터를 사용하기 위해 필요한것들을 이번에 처음 알았는데요, 대표적으로 기억나는 어려운 점들은 아래와 같았습니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 정의가 같은 컬럼이라도, 발행하는 기관이나 API에 따라 이름이 다를 수 있다.
+2. Enum으로 관리되어야 할 것 같은 상수값들이 역시 기관이나 API에 따라 이름이 다를 수 있다.
+3. API명세가 아닌 2번과 같은 값 같은 경우는 내용이 언제 바뀔지 모른다.
+4. 값이 기관에서만 알아볼 수 있는 특정 코드로 되어있는 경우가 대다수이다.
+5. 4번과 같은 코드는 해당 API를 제공하는 곳이 아니라 저 멀리 이상한 다른 기관 사이트의 깊숙히 숨겨진 어딘가에 있다.
+6. 공공기관에 문의는 한세월이다.</code></pre></div>
+<p>뱅크샐러드에서는 위의 1번~6번을 해결하기 위해 중간 Layer를 두어 잘 추상화하여 사용하고 계신다고 하였습니다.</p>
+<p>사실 이런 부분이 실제 데이터를 본격적으로 사용하고자 할 때 크나큰 어려움을 겪는 부분이죠. 이런 데이터 표준과 같은 내용은 이미 제공하는 측에서 관리하여 이용자가 편하게 이용할 수 있게끔 관리해야 한다고
+생각합니다. (많은 기관에서 데이터를 open하고 있는것은 아주 긍정적이지만, 아직 갈길이 먼 것 같습니다)</p>
+<p>:::info</p>
+<p>[2022-11-21] 놀랍게도 개인 개발자분이 중간 layer 비스무리한걸 <a href="https://github.com/WooilJeong/PublicDataReader" target="_blank" rel="nofollow"><code class="language-text">github</code></a>에 올린걸 최근에 발견했습니다.
+관심있으시면 한번 보시는걸 추천 드립니다.</p>
+<p>:::</p>
+<h3>스타트업에서 데이터기반 의사결정 구조 만들기</h3>
+<p>마지막 세션은 NOUL의 <a href="https://www.linkedin.com/in/ACoAAAJgCuMBC6ob4tTNYE290unr86fVRLD7blM" target="_blank" rel="nofollow">Minjong Kim</a>님이 발표해주셨습니다.</p>
+<p>스타트업에서 어떤 문제를 발견하고, 해당 문제를 그냥 지나치지 않고 데이터를 기반으로 의사결정하여 개선해나가는 과정을 말씀해 주셨습니다. 일을 하다 보니 데이터가 동료들이 작업하고 있는 환경의 데이터가 여기저기
+파편화 되어 있고, 버전이 맞지 않으며 이로인해 비즈니스 임팩트까지 발생하는 것을 파악하셨고, 주 업무 분야가 아님에도 불구하고 이런것을 개선하기 위해 아래와 같은 과정을 진행하셨다고 합니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. NAS, Google Spreadsheet 기반 파일 사용 추적 후 DB에 정규화하여 데이터 사용 및 정합성 측면 개선
+2. ML 모델 평가 추론 환경 개선
+3. S3 + Sagemaker + DB
+4. Inference를 반복적으로 수행하지 않게 개선
+5. 통일되지 않은 데이터 타입, 변수명 등 전수조사 및 통일
+6. 이러한 작업을 통한 데이터 가시성 확보</code></pre></div>
+<p>사실 데이터쪽 업무를 하시는 분들이라면 아시겠지만, 당연히 필요한 일을 여러가지 이유로 하지 못하는 경우가 많습니다. 위의 사례를 통해 문제점 발견부터 의사결정권자와 동료들을 설득하는 과정, 개선하는 작업, 이후
+시각화를 통한 추가 개선 사항 도출까지 많은 부분을 배운 것 같습니다.</p>
+<h3>네트워킹</h3>
+<p>네트워킹 같은 경우 사람이 50명 가량 되어 여러 팀으로 나누어 진행하였습니다. 팀마다 발표하신 연사분들이 10분씩 돌아가며 질답을 받아주시고, 중간중간 자유롭게 주변 사람들하고 네트워킹 하는 시간을 가졌는데,
+서먹할 것이라는 예상과 다르게 다들 엄청 적극적으로 네트워킹을 하셨던 것 같습니다. (순간 여기가 한국이 맞나 생각이 들었습니다 ^^;) 덕분에 소심한 저도 조금씩 질문도 하고 명함도 주고받고 했던 것 같네요.</p>
+<p>아래는 제가 주로 질문했던 질문입니다.</p>
+<ol>
+<li>
+<p>(Grab님에게) Socar에서 airflow dev 환경 구성할 때 Dev용 DW는 어떻게 구성하는지?</p>
+<ul>
+<li>(답변) Dev용 DW가 따로 있고 Test를 하는 사람이 데이터를 그때마다 임의로 구성하여 테스트</li>
+<li>제가 궁금했던건 데이터가 다른 데이터를 복잡하게 의존하는 경우가 많아서 그런 경우 기존 DW와 비슷하게 구성해야 하는 경우가 있고 결국 효율성을 위해 운영환경과 비슷하게 구성해야 하는 경우가 많은데,
+어떻게 하고있는지 궁금해서 여쭤봤습니다. 역시 운영환경과 비슷하게 하는건 리소스의 문제가 있기 때문에 작업자가 약간 힘들더라도 개별로 데이터를 구성하여 테스트를 한다고 하네요.</li>
+</ul>
+</li>
+<li>
+<p>(Grab님에게) BigQuery의 장점?</p>
+<ul>
+<li>(답변) 대충 넣어도 사용하기 편하고, 성능이 좋다. 비용은 모르겠다.</li>
+<li>대충 넣어도 사용하기 편한건 제가 직접 경험해보지 않아 모르겠지만 성능은 AWS Redshift Serverless와 별 차이 없는게 벤치마크로 확인되어 인식의 차이가 아닌가 싶습니다. 비용도 AWS 대비
+BigQuery가 비싼 케이스가 많은 것 같은데 사용 편의성에 묻혀서 많은 고객들이 그냥 사용하는 것 같기도 하네요.</li>
+</ul>
+</li>
+<li>
+<p>(이은지님에게) 공공데이터용 중간 Layer를 오픈소스로 공개하실 생각은 없는지?</p>
+<ul>
+<li>(답변) 회사 정책에 따라 확인해보겠다.</li>
+<li>회사 자산이니 당연히 안될거라 생각하긴 했습니다..ㅎㅎ</li>
+</ul>
+</li>
+</ol>
+<p>여러 스타트업, 중견기업, 대기업에 다니시는분들이 골고루 계셨던 것 같고 취업준비생 분들도 간혹 계셨던 것 같습니다. 평소에 자주 쓰던 앱을 개발한 회사에서 오신분들을 보니 신기하기도 하고 짧지만 궁금했던 것들을
+물어보며 그들의 생각도 조금이나마 들어볼 수 있던 좋은 시간이었습니다.</p>
+<p>네트워킹을 1시간이나 잡아서 너무 많은 시간을 잡은 것 아닌가라는 생각을 했었는데, 마지막에는 다들 시간이 모자라서 허겁지겁 명함만 교환하고 아쉽게 헤어졌던 것 같네요.</p>
+<p>::: info</p>
+<p>[2022-11-22] <a href="https://www.youtube.com/playlist?list=PLz4XWo74AOaeXlr6zxjA_24vr8qoSzxHE" target="_blank" rel="nofollow">https://www.youtube.com/playlist?list=PLz4XWo74AOaeXlr6zxjA_24vr8qoSzxHE</a> 해당 세션 녹화 영상들이 업데이트 되었습니다.</p>
+<p>:::</p></div><style data-emotion="css 15zmqn9">@media (max-width: 768px){.css-15zmqn9{padding:0 20px;}}</style><div class="css-15zmqn9"></div><style data-emotion="css 1uoe0u8">.css-1uoe0u8{display:grid;place-items:center;margin-top:auto;padding:50px 0;font-size:15px;text-align:center;line-height:1.5;}@media (max-width: 768px){.css-1uoe0u8{font-size:13px;}}</style><footer class="css-1uoe0u8">Thank you for visiting my blog, Have a good day :)<br/>© 2022 Developer dev-0wner, Powered By Gatsby.</footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2022-11-10-programmers-data-engineering-meetup/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-bcf3dbafa93571480fe3.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-58207fdae0ae867e1c13.js\"],\"component---src-pages-info-tsx\":[\"/component---src-pages-info-tsx-804985aaf2205d4b0a67.js\"],\"component---src-templates-post-template-tsx\":[\"/component---src-templates-post-template-tsx-9d8d86c0673c6ac15f1d.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="47ceace7e313990e877a";</script><script src="/webpack-runtime-1d29bb5d001dbc1bbf2c.js" async></script><script src="/framework-38ba64807c7c56417f3c.js" async></script><script src="/app-bcf3dbafa93571480fe3.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
