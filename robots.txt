@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://dev-owner.github.io/sitemap-index.xml
-Host: https://dev-owner.github.io
+Sitemap: https://dev0wner.pro/sitemap-index.xml
+Host: https://dev0wner.pro
