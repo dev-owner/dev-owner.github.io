@@ -12,7 +12,7 @@ module.exports = {
     title: `dev0wner's Engineering Blog`,
     description: `Data, Cloud에 집중하는 엔지니어`,
     author: `dev0wner`,
-    siteUrl: `https://dev-owner.github.io/`,
+    siteUrl: `https://dev0wner.pro/`,
   },
   plugins: [
     {
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://dev-owner.github.io/',
+        siteUrl: 'https://dev0wner.pro/',
         stripQueryString: true,
       },
     },
