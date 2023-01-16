@@ -9,9 +9,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Dev-0wner's Engineering Blog`,
+    title: `dev0wner's Engineering Blog`,
     description: `Data, Cloud에 집중하는 엔지니어`,
-    author: `dev-0wner`,
+    author: `dev0wner`,
     siteUrl: `https://dev-owner.github.io/`,
   },
   plugins: [
