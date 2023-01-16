@@ -99,7 +99,7 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
         <Date>{date}</Date>
         <Category>
           {categories.map(category => (
-            <CategoryItem key={category}>(category)</CategoryItem>
+            <CategoryItem>{category}</CategoryItem>
           ))}
         </Category>
         <Summary>{summary}</Summary>
