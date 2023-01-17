@@ -15,6 +15,7 @@ module.exports = {
     siteUrl: `https://dev0wner.pro/`,
   },
   plugins: [
+    `gatsby-plugin-cname`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
